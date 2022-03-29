@@ -20,6 +20,28 @@ public static function admin()
                 'is_admin' => 1,
                 'code'  => uniqid(),
             ],
+            [
+                'name' => 'tola',
+                'email'    => 'tola@storytime.com',
+                'password' => bcrypt('Admin_story#2021'),
+                'is_approved' => 1,
+                'is_verified' => 1,
+                'is_admin' => 0,
+                'is_activated' => 1,
+                'is_story_teller' => 1,
+                'code'  => uniqid(),
+            ],
+            [
+                'name' => 'damola',
+                'email'    => 'damola@storytime.com',
+                'password' => bcrypt('Admin_story#2021'),
+                'is_approved' => 1,
+                'is_verified' => 1,
+                'is_admin' => 0,
+                'is_activated' => 1,
+                'is_story_seeker' => 1,
+                'code'  => uniqid(),
+            ],
         ];
 
         // Seed Users (admin) table into the DB

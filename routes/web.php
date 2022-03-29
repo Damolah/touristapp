@@ -97,6 +97,7 @@ Route::group(['namespace' => 'App\Http\Controllers', 'middleware' => 'auth'],fun
     Route::post('teller_send_story',       'StoryTellerController@sendStory')->name('tell_story');
     Route::get('teller_profile/{id}',      'StoryTellerController@seeProfile')->name('see_teller_profile');
     Route::patch('update_teller_profile/{id}',      'StoryTellerController@updateProfile')->name('update_teller_profile');
+    Route::delete('deleteStory/{id}',       'StoryTellerController@destroy')->name('story_destroy');
     Route::get('teller/logout',      'StoryTellerController@logout')->name('story_teller_logout');
 
     //PASSWORD

@@ -15,7 +15,7 @@
 
                 <div class="card card-chart">
                     <div class="card-header card-header-success">
-                        <img src="assets/img/imgtry.png" alt="Basics of Programming">
+                        <img src="assets/img/imgtry.png" class="img-fluid" alt="Basics of Programming">
                     </div>
 
                     <div class="card-body">
