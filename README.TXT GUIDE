@@ -1,0 +1,23 @@
+=> Download source folder from git repository
+=> Open project folder in any command window
+=> Run composer update in command window
+=> Create database school in any preferred database engine(PHPadmin in use for development) 
+=> Run the following two commands in command window. 
+		php artisan key:migrate
+		php artisan migrate
+=> Once this is successfully done, rum php artisan serve
+=> The above command makes the application avaibale to you.
+=> Visit http://localhost:8000 to view application interface
+
+
+
+Usage guide:
+=> The application is divided into 3 user groups
+	1. Admin
+	2. Story tellers
+	3. Story seekers
+	
+A user with the admin role is able to see every functionality of the application. Can function as either a seeker or a teller at the same time making all interface of the application avaialable to the user.
+A seeker on the other hand is a story reader and is only allowed into a view that allows the reading of different stories written by story tellers in the application
+The story teller is one who has toured the area or a particular region and decides to write a story about the visited places to pass a message accross to other visitiors of the website/application.
+An admin can also manage the seekers and the story tellers, he has the right to delete, create and view other roles of the application.
